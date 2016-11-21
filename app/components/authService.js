@@ -14,7 +14,7 @@ function authService(){
         login: login,
         user: user,
         isConnected: isConnected,
-        logout: logout
+        logout: logout,
     };
 
     function login(userinfo) {

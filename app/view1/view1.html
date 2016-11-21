@@ -1,20 +1,27 @@
 <div id="login_user" ng-hide="isConnected()">
     <h1> Please sign in</h1>
-    <input type="text" placeholder="Login" ng-model="user.username"> </br>
+    <input type="text" placeholder="Login" ng-model="user.username" required> </br>
     <input type="password" placeholder="Password" ng-model="user.password"></br>
     <button type="button" ng-click="login(user.username,user.password)" class="btn btn-primary">Login</button></br>
     <button type="button" ng-click="clear()" class="btn btn-danger">Reset</button></br>
     </div>
 <div ng-show="isConnected()">
-    <ul>
-        <li><a TD 1- Angular & Bootstrap>TD 1- Angular & Bootstrap</a></li>
-    <li><a class='active' href="#home">Home</a></li>
-    <li><a href="#device">Devices</a></li>
-    <li><a href="#Profile">Profile</a></li>
-    <li><a href="logout()">Logout</a></li>
-    </ul>
+    <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h class="navbar-brand" >TD 1- Angular & Bootstrap</h>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#" >Device</a></li>
+                <li><a href="#" >Profile</a></li>
+                <li><a href="#" ng-click="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
     <p>Authentication successful !</p>
     <p>Username : {{user.username}}</p>
     <p>Last login : {{Currentdate | date : "medium"}}</p>
-
+    </body>
 </div>

@@ -12,6 +12,7 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.authService'])
     .controller('View1Ctrl', ['$scope', 'authService', function( $scope, auth ) {
         var vm = $scope;
         vm.Currentdate = new Date();
+
         vm.login = function() {
             auth.login( vm.user );
         };
