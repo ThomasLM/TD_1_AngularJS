@@ -2,9 +2,9 @@
     <h1> Please sign in</h1>
     <input type="text" placeholder="Login" ng-model="user.username"> </br>
     <input type="password" placeholder="Password" ng-model="user.password"></br>
-    <button type="reset" ng-click="clear()" ng-style="{'background-color': '#FF0000'}"> Reset </button></br>
-    <button type= "login" ng-click="login(user.username,user.password)" ng-style="{'background-color': '#0040FF'}">Login </button>
-</div>
+    <button type="button" ng-click="login(user.username,user.password)" class="btn btn-primary">Login</button></br>
+    <button type="button" ng-click="clear()" class="btn btn-danger">Reset</button></br>
+    </div>
 <div ng-show="isConnected()">
     <ul>
         <li><a TD 1- Angular & Bootstrap>TD 1- Angular & Bootstrap</a></li>
