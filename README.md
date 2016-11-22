@@ -15,5 +15,7 @@ git clone <repository-url>
 
 ## Run
 * npm start
+* Username : thomas
+* Password : thomas
 
 Open your browser to : http://localhost
